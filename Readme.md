@@ -1,4 +1,4 @@
-## project title :EPIC SNAP SHOWDOWN
+### project title :EPIC SNAP SHOWDOWN
 
 ## Project Overview:
  A web application where users can upload their funniest snap pics and participate in a weekly contest. Users can vote for their favorite snaps, and the funniest snap of the week wins a prize.
