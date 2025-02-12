@@ -1,0 +1,18 @@
+{
+  "name": "s86_epic_snap_sh0wdown",
+  "version": "1.0.0",
+  "description": "A web application where users can upload their funniest snap pics and participate in a weekly contest. Users can vote for their favorite snaps, and the funniest snap of the week wins a prize.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.10.0"
+  }
+}
