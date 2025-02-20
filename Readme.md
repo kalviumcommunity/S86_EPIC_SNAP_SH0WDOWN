@@ -28,3 +28,14 @@ This project is a fun way to engage users and create a community around humor an
 - Committed and pushed the changes to GitHub.
 - Created a Pull Request (PR) and requested an AI review using @CodiumAI-Agent /review.
 - Reviewed feedback and merged the PR into the main branch.
+## MILESTONE 4:
+Deployed App Link
+You can view the live app by visiting the following link:
+
+[https://s86-epic-snap-sh0wdown.onrender.come]
+
+Deployment Process
+Login: Logged into Render.com using my Kalvium Community Google account.
+Deploy: Navigated to the Deploy section, selected the Public repository option, and imported the project files.
+Automatic Setup: Render automatically detected the necessary environment settings and deployed the app. I just clicked Deploy, and Render handled the rest.
+Updated Readme: Added the deployment link to this Readme so you can access the live app easily.
