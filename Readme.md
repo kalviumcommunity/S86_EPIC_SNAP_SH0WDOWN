@@ -28,3 +28,9 @@ This project is a fun way to engage users and create a community around humor an
 - Committed and pushed the changes to GitHub.
 - Created a Pull Request (PR) and requested an AI review using @CodiumAI-Agent /review.
 - Reviewed feedback and merged the PR into the main branch.
+- # Bruno API Testing Requests:
+
+This Assignment includes API requests generated and exported from Bruno, organized in a folder called docs.bruno. The requests can be used for testing APIs or further integration in the project.
+
+- Bruno: Used to generate and export API requests.
+- 
