@@ -39,3 +39,10 @@ Login: Logged into Render.com using my Kalvium Community Google account.
 Deploy: Navigated to the Deploy section, selected the Public repository option, and imported the project files.
 Automatic Setup: Render automatically detected the necessary environment settings and deployed the app. I just clicked Deploy, and Render handled the rest.
 Updated Readme: Added the deployment link to this Readme so you can access the live app easily.
+
+## MILESTONE 5:
+# Bruno API Testing Requests:
+
+This Assignment includes API requests generated and exported from Bruno, organized in a folder called docs.bruno. The requests can be used for testing APIs or further integration in the project.
+
+- Bruno: Used to generate and export API requests.
