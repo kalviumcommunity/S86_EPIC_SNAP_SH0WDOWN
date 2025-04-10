@@ -1,0 +1,19 @@
+meta {
+  name: MODIFYING DATA THROUGH API
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:3000/api/login
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "username": "Supriya",
+    "password": "subbu2006"
+  }
+  
+}
