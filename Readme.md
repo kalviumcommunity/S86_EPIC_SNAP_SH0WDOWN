@@ -28,7 +28,7 @@ This project is a fun way to engage users and create a community around humor an
 - Committed and pushed the changes to GitHub.
 - Created a Pull Request (PR) and requested an AI review using @CodiumAI-Agent /review.
 - Reviewed feedback and merged the PR into the main branch.
-## MILESTONE 4:
+-## MILESTONE 4:
 Deployed App Link
 You can view the live app by visiting the following link:
 
