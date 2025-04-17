@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  background: linear-gradient(135deg, #f7f5f9, #e0f7fa);
+  color: #2d2d2d;
+  overflow-x: hidden;
+}
+
+.landing-container {
+  text-align: center;
+  padding: 2rem;
+}
+
+.header {
+  background: #ffe1e8;
+  color: #222;
+  padding: 3rem 1rem;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(219, 48, 122, 0.4); /* darker pink shadow */
+  animation: floaty 5s ease-in-out infinite;
+}
+
+
+@keyframes floaty {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+.header h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.header p {
+  font-size: 1.2rem;
+  color: #2a2a2a; /* darker and more visible */
+  font-weight: 600; /* make it bolder */
+}
+
+
+.btn {
+  background: #ffcc70;
+  color: #1c1c1c; /* darker for contrast */
+  font-size: 1rem;
+  border: none;
+  padding: 0.75rem 1.8rem;
+  border-radius: 30px;
+  font-weight: 700; /* bold the text more */
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(255, 204, 112, 0.6);
+  margin-top: 1rem;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+
+.btn:hover {
+  transform: scale(1.05);
+  background-color: rosybrown;
+}
+
+.features {
+  margin: 3rem auto;
+  max-width: 650px;
+}
+
+.features h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #d80855;
+}
+
+.features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.features li {
+  background: #fffdfc;
+  margin: 0.8rem 0;
+  padding: 1rem 1.5rem;
+  border-radius: 15px;
+  font-size: 1.1rem;
+  font-weight: 600; /* 💪 Makes the text bolder */
+  color: #333; /* 🌚 Darker for better visibility */
+  border: 3.5px solid #ffe1e8;
+  box-shadow: 0 4px 15px rgba(255, 192, 203, 0.4);
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+
+.features li:hover {
+  transform: rotate(-1deg) scale(1.02);
+  background: #fdf1ff;
+}
+
+
+.features li:hover {
+  transform: rotate(-1deg) scale(1.02);
+  background: #fdf1ff;
+}
+
+
+.features li:hover {
+  transform: rotate(-1deg) scale(1.02);
+  background: #fdf1ff;
+}
+
+.footer {
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #666;
+  padding-bottom: 2rem;
+}
