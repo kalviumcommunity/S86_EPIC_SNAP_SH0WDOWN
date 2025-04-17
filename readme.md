@@ -24,5 +24,5 @@ You can view the live app by visiting the following link:
 
 [https://s86-epic-snap-sh0wdown.onrender.come]
 
-### frontend deployment link 
+### frontend deployment link - netlify 
 https://epicsnapshowdown.netlify.app/
