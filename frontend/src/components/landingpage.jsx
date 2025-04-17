@@ -34,7 +34,7 @@ export default function App() {
       </main>
 
       <footer className="bg-gray-100 text-center py-6 text-sm text-gray-600">
-        &copy; 2025 Epic Snap Showdown | Built with ❤️ using React + Vite
+        &copy; 2025 Epic Snap Showdown 
       </footer>
     </div>
   );
