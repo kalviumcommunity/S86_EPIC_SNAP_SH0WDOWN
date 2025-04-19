@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+
+
 
 body {
   margin: 0;
   font-family: 'Quicksand', sans-serif;
-  background: linear-gradient(135deg, #f7f5f9, #e0f7fa);
-  color: #2d2d2d;
+  background: linear-gradient(135deg, #fff0f5, #fef6e4); /* soft pink & cream */
+  color: #3b3b3b;
   overflow-x: hidden;
 }
 
@@ -14,14 +19,16 @@ body {
 }
 
 .header {
-  background: #ffe1e8;
-  color: #222;
+  background: #ffebf0; /* baby pink */
+  color: #333;
   padding: 3rem 1rem;
-  border-radius: 20px;
-  box-shadow: 0 0 25px rgba(219, 48, 122, 0.4); /* darker pink shadow */
-  animation: floaty 5s ease-in-out infinite;
+  border-radius: 30px;
+  box-shadow: 0 0 30px rgba(255, 182, 193, 0.35); /* soft pig-pink glow */
+  animation: floaty 6s ease-in-out infinite;
+  border: 2px dashed #f9c6d4; /* playful dashed border */
+  position: relative;
+  z-index: 1;
 }
-
 
 @keyframes floaty {
   0%, 100% { transform: translateY(0); }
@@ -30,36 +37,73 @@ body {
 
 .header h1 {
   font-size: 3rem;
-  margin-bottom: 0.5rem;
-  font-weight: 700;
+  margin-bottom: 0.75rem;
+  font-weight: 800;
+  color: #d36b9a; /* rosy piggy */
+  text-shadow: 1px 1px #fff;
 }
 
 .header p {
   font-size: 1.2rem;
-  color: #2a2a2a; /* darker and more visible */
-  font-weight: 600; /* make it bolder */
+  color: #5b3a4f;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  background: rgba(255, 240, 245, 0.6);
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(247, 194, 222, 0.3);
 }
 
 
+/* 🌸 Pig‑Snout Button */
 .btn {
-  background: #ffcc70;
-  color: #1c1c1c; /* darker for contrast */
+  position: relative;
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  background-color: var(--pig-snout);
+  color: var(--text-dark);
+  font-weight: 700;
   font-size: 1rem;
   border: none;
-  padding: 0.75rem 1.8rem;
-  border-radius: 30px;
-  font-weight: 700; /* bold the text more */
+  border-radius: 40px 40px 20px 20px;   /* snout curve */
   cursor: pointer;
-  box-shadow: 0 4px 10px rgba(255, 204, 112, 0.6);
-  margin-top: 1rem;
-  transition: transform 0.2s ease, background 0.3s ease;
+  box-shadow: 
+    0 6px 18px var(--shadow-pink),       /* outer shadow */
+    inset -10px 0 0 var(--pig-blush),    /* left nostril hint */
+    inset 10px 0 0 var(--pig-blush);     /* right nostril hint */
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  overflow: visible;
 }
 
+/* 🐷 Pig Ears */
+.btn::before,
+.btn::after {
+  content: '';
+  position: absolute;
+  top: -0.6rem;
+  width: 1rem;
+  height: 1rem;
+  background: var(--pig-blush);
+  border-radius: 50% 50% 20% 20%;
+}
 
+.btn::before {
+  left: 20%;
+  transform: rotate(-25deg);
+}
+
+.btn::after {
+  right: 20%;
+  transform: rotate(25deg);
+}
+
+/* 🐽 Hover Lift */
 .btn:hover {
-  transform: scale(1.05);
-  background-color: rosybrown;
+  transform: translateY(-3px) scale(1.05);
+  background-color: var(--pig-dark);
 }
+
 
 .features {
   margin: 3rem auto;
@@ -113,4 +157,190 @@ body {
   font-size: 0.9rem;
   color: #666;
   padding-bottom: 2rem;
+}
+
+
+
+
+/* 🐖 Piggy Palette */
+:root {
+  --pig-blush:    #ffcad4;
+  --pig-light:    #ffe5ec;
+  --pig-snout:    #ffb3c1;
+  --pig-dark:     #d47b8b;
+  --text-dark:    #4d3a3a;
+  --shadow-pink:  rgba(212, 123, 139, 0.3);
+}
+
+/* 1) Make width include padding/border so inputs never overflow */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 🐷 Body */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+  background: var(--pig-light);
+  color: var(--text-dark);
+}
+
+/* 🐷 Dashboard Container */
+.dashboard {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 30px;
+  background: var(--pig-light);
+  border-radius: 24px;
+  box-shadow: 0 8px 24px var(--shadow-pink);
+}
+
+/* 🐽 Heading + Pig Ears */
+h1 {
+  position: relative;
+  text-align: center;
+  color: var(--pig-dark);
+  font-size: 2.8rem;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.uploadSnap {
+  color:#6b3357
+}
+
+
+h1::before,
+h1::after {
+  content: '';
+  position: absolute;
+  width: 1.2rem;
+  height: 1.2rem;
+  background: var(--pig-blush);
+  border-radius: 50% 50% 20% 20%;
+  top: -0.6rem;
+}
+
+h1::before { left: 40%; transform: rotate(-25deg); }
+h1::after  { right: 40%; transform: rotate(25deg); }
+
+/* 🗂 Layout */
+.dashboard-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* 🐖 Upload & Snaplist Sections */
+/* ensure equal padding on both sides */
+.upload-section,
+.snaplist-section {
+  background: var(--pig-snout);
+  padding: 25px 2rem;    /* 2rem left/right gutter */
+  border-radius: 16px;
+  box-shadow: 0 4px 16px var(--shadow-pink);
+}
+
+/* 📝 Form Wrapper */
+.upload-form {
+
+}
+
+/* 📝 Form Inputs */
+.upload-form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border-radius: 12px;
+  border: 2px solid var(--pig-blush);
+  background-color: #fff7f8;
+  color: var(--text-dark);
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+}
+
+
+.upload-form input:focus {
+  outline: none;
+  border: 2px solid var(--pig-dark); 
+  box-shadow: 9px 8px 8px var(--pig-blush); 
+}
+
+
+/* 🐽 Snout‑Style Buttons */
+.upload-form button,
+.snap button {
+  position: relative;
+  padding: 12px 28px;
+  background-color: var(--pig-dark);
+  color:#6b3357;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  border-radius: 50px 50px 30px 30px;
+  cursor: pointer;
+  box-shadow: 0 6px 18px var(--shadow-pink);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* 🐽 Pig Nostrils */
+.upload-form button::before,
+.upload-form button::after,
+.snap button::before,
+.snap button::after {
+  content: '';
+  position: absolute;
+  width: 0.5rem;
+  height: 0.5rem;
+  background: var(--pig-blush);
+  border-radius: 50%;
+  top: 0.6rem;
+}
+
+.upload-form button::before { left: 40%; }
+.upload-form button::after  { right: 40%; }
+.snap button::before        { left: 35%; }
+.snap button::after         { right: 35%; }
+
+.upload-form button:hover,
+.snap button:hover {
+  transform: translateY(-3px) scale(1.05);
+  background-color: var(--pig-dark);
+}
+
+/* 🐾 Snap Card */
+.snap-list .snap {
+  background: white;
+  padding: 18px 2rem;    /* also give horizontal padding */
+  border: 2px dashed var(--pig-blush);
+  margin-bottom: 20px;
+  border-radius: 14px;
+  box-shadow: 0 2px 10px var(--shadow-pink);
+}
+
+/* 👤 Avatar + Info Row */
+.snap-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 3px solid var(--pig-blush);
+}
+
+/* 🖼 Snap Image */
+.snap-img {
+  max-width: 100%;
+  margin: 12px 0;
+  border-radius: 14px;
+  border: 1px solid #ffe1e8;
 }

@@ -1,31 +1,23 @@
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import Home from './components/Home';
+import Login from './pages/login';
+import Signup from './pages/signup';
+import Dashboard from './pages/Dashboard';
+
 
 function App() {
   return (
-    <div className="landing-container">
-      <header className="header">
-        <h1>Epic Snap Showdown📸</h1>
-        <p>Unleash your inner meme wizard 🧙‍♀️ and snap your way to victory!</p>
-        <button className="btn">Let the Madness Begin 🎉</button>
-      </header>
-
-      <section className="features">
-        <h2>What's Cookin' 🍳</h2>
-        <ul>
-          <li>🦄 Create your goofy profile</li>
-          <li>📸 Upload your wildest snap fails</li>
-          <li>😹 Vote for the ones that made you LOL IRL</li>
-          <li>👑 Win the “Meme Royalty of the Week” title</li>
-          <li>📝 Drop captions spicier than hot sauce</li>
-          <li>📤 Share with your squad & spread the chaos</li>
-        </ul>
-      </section>
-
-      <footer className="footer">
-        <p>Built with giggles & powered by caffeine ☕💻</p>
-        <p>© 2025 Snapocalypse Inc. 💥</p>
-      </footer>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path='/dashboard' element={<Dashboard />} />
+        
+      </Routes>
+    </Router> 
   );
 }
 
